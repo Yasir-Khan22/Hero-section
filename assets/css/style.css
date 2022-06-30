@@ -8,31 +8,37 @@
     padding: 0;
     box-sizing: border-box;
     font-family: cascadia code;
-    border: 2px solid teal;
 }
 body {
     background: var(--background-clr);
-    line-height: 1.4rem;
+    line-height: 1.4;
 }
 .container {
-    width: 1200px;
-    border: 2px solid black;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 4rem 2rem;
 }
 .hero {
     display: flex;
-    align-items: center;
+    align-items: center; 
     flex-wrap: wrap;
+    border: double 12px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(#92E3A9, #92E3A9),
+    linear-gradient(to right, #d78eca, #98a3fb);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 .banner-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     width: 50%;
 }
 h1 {
     font-size: 2.5rem;
+    line-height: 2rem;
 }
+
 p {
     margin-top: 0.5rem;
 }
@@ -51,5 +57,16 @@ button {
     transition: all 0.05s ease;
 }
 button:hover {
-    background-color: #1da121;
+    background-color: #92E3A9;
+}
+.svg-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svg-wrapper img {
+  width: 100%;
+  height: 100%;
+
 }
